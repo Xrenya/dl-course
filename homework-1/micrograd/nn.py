@@ -27,7 +27,6 @@ class Linear(Module):
 
     def forward(self, inp):
         """Y = W * x + b"""
-        # YOUR CODE GOES HERE
         return # YOUR CODE GOES HERE
 
     def parameters(self):
@@ -45,5 +44,4 @@ class CrossEntropyLoss(Module):
     """Cross-entropy loss for multi-class classification"""
     def forward(self, inp, label):
         # Create CrossEntropy Loss Module
-        # YOUR CODE GOES HERE
         return # YOUR CODE GOES HERE
