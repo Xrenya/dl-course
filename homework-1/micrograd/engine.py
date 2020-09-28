@@ -27,11 +27,11 @@ class Value:
 
     def __mul__(self, other: Union[int, float, "Value"]) -> "Value":
         other = other if isinstance(other, Value) else Value(other)
-        out = ...
+        out = # YOUR CODE GOES HERE
 
         def _backward():
-            self.grad += ...
-            other.grad += ...
+            self.grad += # YOUR CODE GOES HERE
+            other.grad += # YOUR CODE GOES HERE
 
         out._backward = _backward
 
@@ -41,29 +41,29 @@ class Value:
         assert isinstance(
             other, (int, float)
         ), "only supporting int/float powers for now"
-        out = ...
+        out = # YOUR CODE GOES HERE
 
         def _backward():
-            self.grad += ...
+            self.grad += # YOUR CODE GOES HERE
 
         out._backward = _backward
 
         return out
 
     def exp(self):
-        out = ...
+        out = # YOUR CODE GOES HERE
 
         def _backward():
-            self.grad += ...
+            self.grad += # YOUR CODE GOES HERE
 
         out._backward = _backward
         return out
 
     def relu(self):
-        out = ...
+        out = # YOUR CODE GOES HERE
 
         def _backward():
-            self.grad += ...
+            self.grad += # YOUR CODE GOES HERE
 
         out._backward = _backward
 
@@ -146,39 +146,39 @@ class Tensor:
         return Tensor(self.data + other)
 
     def __mul__(self, other):
-        return ...
+        return # YOUR CODE GOES HERE
     
     def __truediv__(self, other):
-        return ...
+        return # YOUR CODE GOES HERE
     
     def __floordiv__(self, other):
-        return ...
+        return # YOUR CODE GOES HERE
     
     def __radd__(self, other):
-        return ...
+        return # YOUR CODE GOES HERE
     
     def __rmull__(self, other):
-        return ...
+        return # YOUR CODE GOES HERE
 
     def exp(self):
-        return ...
+        return # YOUR CODE GOES HERE
 
     def dot(self, other):
         if isinstance(other, Tensor):
-            return ...
-        return ...
+            return # YOUR CODE GOES HERE
+        return # YOUR CODE GOES HERE
 
     def shape(self):
         return self.data.shape
 
     def argmax(self, dim=None):
-        return ...
+        return # YOUR CODE GOES HERE
 
     def max(self, dim=None):
-        return ...
+        return # YOUR CODE GOES HERE
 
     def reshape(self, *args, **kwargs):
-        self.data = ...
+        self.data = # YOUR CODE GOES HERE
         return self
 
     def backward(self):
