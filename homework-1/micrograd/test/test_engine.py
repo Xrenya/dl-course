@@ -65,5 +65,5 @@ def test_more_ops():
     # forward pass went well
     assert abs(gmg.data - gpt.data.item()) < tol
     # backward pass went well
-    assert abs(amg.grad - apt.grad.item()) < tol
-    assert abs(bmg.grad - bpt.grad.item()) < tol
+    assert abs(amg.grad.data - apt.grad.item()) < tol
+    assert abs(bmg.grad.data - bpt.grad.item()) < tol
