@@ -27,21 +27,21 @@ class Linear(Module):
 
     def forward(self, inp):
         """Y = W * x + b"""
-        return ...
+        return # YOUR CODE GOES HERE
 
     def parameters(self):
-        return ...
+        return # YOUR CODE GOES HERE
 
 
 class ReLU(Module):
     """The most simple and popular activation function"""
     def forward(self, inp):
         # Create ReLU Module
-        return ...
+        return # YOUR CODE GOES HERE
 
 
 class CrossEntropyLoss(Module):
     """Cross-entropy loss for multi-class classification"""
     def forward(self, inp, label):
         # Create CrossEntropy Loss Module
-        return ...
+        return # YOUR CODE GOES HERE
